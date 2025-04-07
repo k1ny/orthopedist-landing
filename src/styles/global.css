@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mulish", sans-serif;
+}
+
+:root {
+    --container-width: 76.5rem;
+    --color-blue: hsla(219, 89%, 58%, 1);
+    --color-gray: hsla(220, 21%, 52%, 1);
+    --color-white: hsla(220, 100%, 97%, 1);
+    --color-emerald: hsla(171, 65%, 45%, 1);
+    --color-medium-blue: hsla(215, 36%, 15%, 1);
+}
+
+.container {
+    width: var(--container-width);
+    margin: 0 auto;
+}

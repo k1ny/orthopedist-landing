@@ -1,0 +1,52 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 3.125rem 0;
+    z-index: 1000;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__navigation {
+    display: flex;
+    gap: 1.5rem;
+    font-weight: 700;
+    color: var(--color-gray);
+}
+
+.header__appointment {
+    display: flex;
+    gap: 1.875rem;
+    align-items: center;
+}
+
+.header__appointment-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.header__appointment-info a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.header__appointment-info p {
+    text-decoration: none;
+    color: var(--color-emerald);
+}
+
+.header__appointment-button {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    padding: 1.375rem 2.625rem;
+    border-radius: 1rem;
+    border: none;
+    font-weight: 700;
+}

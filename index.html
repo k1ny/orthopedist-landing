@@ -3,10 +3,67 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/src/styles/global.css" />
+        <link rel="stylesheet" href="/src/styles/header.css" />
+        <link rel="stylesheet" href="/src/styles/hero.css" />
+
         <title>Vite + TS</title>
     </head>
     <body>
-        <div id="app"></div>
+        <header class="header">
+            <div class="container header__content">
+                <a href="#">
+                    <img src="/logo.svg" alt="logo" />
+                </a>
+
+                <nav class="header__navigation">
+                    <a>О клинике</a>
+                    <a>Услуги</a>
+                    <a>Правила</a>
+                    <a>Врачи</a>
+                </nav>
+
+                <div class="header__appointment">
+                    <div class="header__appointment-info">
+                        <a itemprop="telephone" href="tel:+79117707096">
+                            +7 (911)-770-70-96
+                        </a>
+                        <p>Пн-Пт / 10:00 - 21:00</p>
+                    </div>
+                    <button class="header__appointment-button">
+                        Записаться на прием
+                    </button>
+                </div>
+            </div>
+
+            <!-- <div class="burger_block container">
+                <button
+                    class="burger-button button button_size_icon button_variant_ghost"
+                >
+                    <img
+                        class="burger-button__open-icon"
+                        width="24"
+                        height="24"
+                        src="/burger.svg"
+                    />
+
+                    <img
+                        class="burger-button__close-icon"
+                        width="24"
+                        height="24"
+                        src="/cross.svg"
+                    />
+                </button>
+            </div> -->
+        </header>
+        <!-- <div class="header_spacer"></div> -->
+
         <script type="module" src="/src/main.ts"></script>
     </body>
 </html>
