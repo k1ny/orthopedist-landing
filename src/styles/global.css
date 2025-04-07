@@ -12,6 +12,8 @@
     --color-white: hsla(220, 100%, 97%, 1);
     --color-emerald: hsla(171, 65%, 45%, 1);
     --color-medium-blue: hsla(215, 36%, 15%, 1);
+    --color-coral-red: #bb2854;
+    --color-dark-gray: #283547;
 }
 
 .container {
