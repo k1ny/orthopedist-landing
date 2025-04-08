@@ -1,0 +1,67 @@
+.advantages {
+    padding: 4.125rem 7.125rem;
+}
+.advantages__cardsContainer {
+    user-select: none;
+    padding-top: 4.25rem;
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-white);
+}
+.advantages__cardsGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.advantages__card {
+    width: 37.5rem;
+    border-radius: 1rem;
+}
+.default__card {
+    padding-left: 3.625rem;
+    display: flex;
+    align-items: center;
+}
+.default__card h3 {
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+.default__card p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.advantages__card-content {
+    display: flex;
+    gap: 1.25rem;
+    height: auto;
+}
+.advantages__card-description {
+    display: flex;
+    flex-direction: column;
+    gap: 1.125rem;
+}
+.advantages__cardsGroup:nth-child(1) .advantages__card:nth-child(1) {
+    background-image: url("/advantage-bg-1.png");
+    height: 31.875rem;
+    padding-bottom: 3.625rem;
+    align-items: end;
+}
+.advantages__cardsGroup:nth-child(1) .advantages__card:nth-child(2) {
+    background-image: url("/advantage-bg-4.png");
+    height: 15rem;
+    display: flex;
+    gap: 2.75rem;
+    font-weight: 800;
+    font-size: 3.9rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantages__cardsGroup:nth-child(2) .advantages__card:nth-child(1) {
+    background-image: url("/advantage-bg-2.png");
+    height: 26.25rem;
+}
+.advantages__cardsGroup:nth-child(2) .advantages__card:nth-child(2) {
+    background-image: url("/advantage-bg-3.png");
+    height: 20.625rem;
+}

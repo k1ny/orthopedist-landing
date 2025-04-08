@@ -4,6 +4,7 @@
     padding-top: 11.875rem;
     padding-bottom: 4rem;
     color: var(--color-white);
+    border-radius: 0 0 6.25rem 6.25rem;
 }
 
 .hero__content {

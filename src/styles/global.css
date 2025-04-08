@@ -7,6 +7,7 @@
 
 :root {
     --container-width: 76.5rem;
+    --color-cold-white: #f0f5ff;
     --color-blue: hsla(219, 89%, 58%, 1);
     --color-gray: hsla(220, 21%, 52%, 1);
     --color-white: hsla(220, 100%, 97%, 1);
@@ -19,4 +20,14 @@
 .container {
     width: var(--container-width);
     margin: 0 auto;
+}
+
+body {
+    background-color: var(--color-cold-white);
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 3rem;
+    text-transform: uppercase;
 }
