@@ -1,0 +1,69 @@
+.services {
+    padding: 4.125rem 7.125rem;
+}
+.services__content {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.services__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.services__list-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services__list-item:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.services__list-item:nth-child(4) {
+    flex-direction: row-reverse;
+}
+
+.services__list-item img,
+.services__item-info {
+    max-width: 37.5rem;
+    max-height: 37.5rem;
+    border-radius: 1rem;
+}
+
+.services__item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3.875rem;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.services__item-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 0 5rem;
+}
+
+.services__item-text h3 {
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+.services__item-text p {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.services__item-link {
+    color: var(--color-cold-white);
+    background-color: var(--color-blue);
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1.875rem 5.625rem;
+    border-radius: 1rem;
+}

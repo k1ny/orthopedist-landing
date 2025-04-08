@@ -34,3 +34,7 @@ h2 {
     font-size: 3rem;
     text-transform: uppercase;
 }
+
+a {
+    text-decoration: none;
+}
