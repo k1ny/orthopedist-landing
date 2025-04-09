@@ -1,0 +1,102 @@
+.rules {
+    background-color: var(--color-dark-blue);
+    border-radius: 6.25rem;
+    color: var(--color-cold-white);
+    padding-block: 4.875rem 7.875rem;
+}
+.rules__content {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.rules__topicCard {
+    background-image: url("/rules__topic-card-bg.png");
+    background-size: cover;
+    display: flex;
+    gap: 1.75rem;
+    padding: 3.625rem 2.75rem;
+    border-radius: 1rem;
+    align-items: start;
+}
+.rules__topicCard-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+}
+.rules__topicCard h3 {
+    font-size: 2.25rem;
+    font-family: 700;
+}
+.rules__topicCard p {
+    font-size: 1.5rem;
+    font-family: 600;
+    width: 100%;
+    max-width: 56rem;
+}
+.rules__list {
+    display: flex;
+    flex-direction: column;
+    gap: 3.125rem;
+}
+.rules__list-item {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+.accordion {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    align-items: center;
+    padding: 1.8rem 2.75rem;
+    background-color: var(--color-semi-gray);
+}
+
+.rules__item-title {
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.rules__title-number {
+    color: var(--color-gray);
+}
+
+.accordion__description {
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+    padding-inline: 2.75rem;
+    transition: padding 0.3s ease-in-out;
+    background-color: var(--color-semidark-gray);
+    display: flex;
+    gap: 5.375rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.rotated {
+    transform: rotate(90deg);
+}
+.acordion__button {
+    transition: transform 0.3s ease-in-out;
+    background: none;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--color-dark-gray);
+}
+
+.accordion__description-item {
+    display: flex;
+    max-width: 30.625rem;
+    gap: 2.875rem;
+}
+.description__item-icon {
+    width: fit-content;
+    height: fit-content;
+}
