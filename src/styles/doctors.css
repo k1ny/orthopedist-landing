@@ -1,0 +1,58 @@
+.doctors {
+    padding-block: 5rem 9.875rem;
+}
+.doctors__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.875rem;
+}
+.doctor__card img {
+    pointer-events: none;
+}
+
+.doctor__card {
+    height: 49.375rem;
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.doctor__card-content {
+    width: 18.875rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.75rem;
+}
+
+.doctor__card-info {
+    color: var(--color-dark-blue);
+    display: flex;
+    padding-top: 2.5rem;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.doctor__card-info h4 {
+    font-weight: 700;
+    font-size: 2.25rem;
+}
+
+.doctor__card-info p {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.doctor__card-link {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.125rem;
+    border-radius: 0.75rem;
+    height: 4.5rem;
+    background-color: var(--color-emerald);
+    color: var(--color-cold-white);
+}
