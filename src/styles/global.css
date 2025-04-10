@@ -21,6 +21,7 @@
     --color-semi-gray: hsla(217, 26%, 17%, 1);
     --color-semidark-gray: hsla(216, 28%, 14%, 1);
     --color-light-gray: #5a6170;
+    --color-header: hsla(216, 35%, 15%, 0.9);
 }
 
 .container {

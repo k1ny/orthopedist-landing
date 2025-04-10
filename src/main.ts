@@ -47,3 +47,14 @@ const pointer = IS_TOUCH_SUPPORTED ? new Touch() : new Cursor();
 const screen = new Screen();
 
 createSwipers(pointer, screen);
+
+const header = document.querySelector(".header");
+if (header) {
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 40) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  });
+}

@@ -5,6 +5,11 @@
     width: 100%;
     padding: 3.125rem 0;
     z-index: 1000;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.header.scrolled {
+    background-color: var(--color-header);
 }
 
 .header__content {
