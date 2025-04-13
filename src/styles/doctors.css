@@ -56,3 +56,44 @@
     background-color: var(--color-emerald);
     color: var(--color-cold-white);
 }
+
+@media screen and (max-width: 1224px) {
+    .doctor__card img {
+        pointer-events: none;
+        width: 14.5rem;
+    }
+    .doctors {
+        padding-block: 1.75rem 2.25rem;
+    }
+    .doctors__content {
+        display: flex;
+        flex-direction: column;
+        gap: 1.875rem;
+    }
+    .doctor__card {
+        height: 26.25rem;
+    }
+    .doctor__card-content {
+        width: 12.5rem;
+        gap: 1.5rem;
+    }
+    .doctor__card-info {
+        padding-top: 1.625rem;
+        gap: 0.5rem;
+    }
+    .doctor__card-info h4 {
+        font-weight: 700;
+        font-size: 1.125rem;
+    }
+    .doctor__card-info p {
+        font-weight: 600;
+        font-size: 0.75rem;
+    }
+    .doctor__card-link {
+        width: 100%;
+        font-weight: 700;
+        font-size: 0.875rem;
+        border-radius: 0.75rem;
+        height: 2.875rem;
+    }
+}

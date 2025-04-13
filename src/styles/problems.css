@@ -27,6 +27,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.125rem;
+    width: 100%;
 }
 
 .problems__list-item {
@@ -44,11 +45,11 @@
     background-color: var(--color-emerald);
 }
 
-.problems__list-item:hover .problems__arrow {
-    background-color: var(--color-medium-gray);
+.problems__list-item:hover .circle__path-icon {
+    color: var(--color-medium-gray);
 }
 
-.problems__list-item:hover .problems__arrow svg {
+.problems__list-item:hover .arrow__path-icon {
     color: var(--color-medium-white);
 }
 
@@ -72,15 +73,40 @@
     align-items: center;
 }
 
-.problems__arrow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background-color: var(--color-dark-gray);
-    width: 2.5rem;
-    height: 2.5rem;
+.circle__path-icon {
+    color: var(--color-dark-gray);
 }
-.problems__arrow svg {
+
+.arrow__path-icon {
     color: var(--color-gray);
+}
+
+.full__path-icon {
+    flex-shrink: 0;
+}
+
+@media screen and (max-width: 1224px) {
+    .problems {
+        border-radius: 1rem;
+        padding: 1.75rem 0 3.375rem 0;
+    }
+
+    .problems__category h3 {
+        font-size: 1.125rem;
+        font-weight: 600;
+    }
+    .problems__info {
+        font-size: 1rem;
+        font-weight: 600;
+        gap: 2.5rem;
+    }
+    .problems__arrow {
+        width: 2.25rem;
+        height: 2.25rem;
+    }
+
+    .full__path-icon {
+        height: 36px;
+        width: 36px;
+    }
 }

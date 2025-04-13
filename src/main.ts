@@ -23,7 +23,9 @@ document.querySelectorAll(".rules__list-item").forEach((el) => {
 
     if (!isOpen) {
       content.style.maxHeight = content.style.maxHeight + "500px";
-      content.style.paddingBlock = "3.125rem";
+      if (window.innerWidth <= 1224) {
+        content.style.paddingBlock = "1.5rem";
+      } else content.style.paddingBlock = "3.125rem";
       plusIcon.classList.add("rotated");
     }
   });
@@ -58,3 +60,34 @@ if (header) {
     }
   });
 }
+
+const createBurger = () => {
+  let active = false;
+
+  const burger = document.querySelector<HTMLElement>(".burger-button")!;
+  const menu = document.querySelector<HTMLElement>(".header__content")!;
+
+  const links = menu.querySelectorAll("a");
+
+  burger.addEventListener("click", () => {
+    if (!active) {
+      burger.dataset.open = "";
+      menu.dataset.open = "";
+      active = true;
+    } else {
+      delete burger.dataset.open;
+      delete menu.dataset.open;
+      active = false;
+    }
+  });
+
+  links.forEach((link) => {
+    link.addEventListener("click", () => {
+      delete burger.dataset.open;
+      delete menu.dataset.open;
+      active = false;
+    });
+  });
+};
+
+createBurger();
