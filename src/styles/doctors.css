@@ -25,12 +25,12 @@
 }
 
 .doctor__card-content {
-    width: 18.875rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: space-between;
-    padding-block: 2.5rem;
+    padding: 2.5rem;
 }
 
 .doctor__card-info {
@@ -70,7 +70,8 @@
 @media screen and (max-width: 1224px) {
     .doctor__card img {
         pointer-events: none;
-        width: 14.5rem;
+        object-position: 10% 30%;
+        width: 100%;
     }
     .doctors {
         padding-block: 1.75rem 2.25rem;
@@ -84,8 +85,8 @@
         height: 26.25rem;
     }
     .doctor__card-content {
-        width: 12.5rem;
-        padding-block: 1.625rem;
+        width: 100%;
+        padding: 1.625rem;
     }
 
     .doctor__card-info h4 {
