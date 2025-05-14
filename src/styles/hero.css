@@ -69,18 +69,17 @@
     display: flex;
     gap: 1rem;
 }
-.hero__socials-link {
-    padding: 1.125rem;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .hero__socials-link:nth-child(1) {
     background-color: var(--color-blue);
 }
 .hero__socials-link:nth-child(2) {
     background-color: var(--color-coral-red);
+    border: 2px solid var(--color-coral-red);
+}
+
+.hero__socials-link:nth-child(2):hover {
+    border-color: #d14467;
 }
 
 @media screen and (max-width: 1224px) {

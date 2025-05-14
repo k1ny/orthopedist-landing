@@ -2,6 +2,51 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <title>Кабинет Ортопеда</title>
+
+        <link
+            rel="icon"
+            type="image/png"
+            href="/favicons/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link rel="icon" type="image/svg+xml" href="/favicons/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/favicons/apple-touch-icon.png"
+        />
+        <meta name="apple-mobile-web-app-title" content="BONA" />
+        <link rel="manifest" href="/favicons/site.webmanifest" />
+
+        <meta property="og:title" content="BONA" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://bonahouses.ru/" />
+        <meta property="og:image" content="https://bonahouses.ru/logo-og.png" />
+        <meta property="og:image:alt" content="Ортопедическая клиника в Санкт-Петербурге." />
+        <meta
+            property="og:description"
+            content="Ортопедическая клиника в Санкт-Петербурге."
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="BONA" />
+        <meta property="og:locale" content="ru_RU" />
+
+        <link rel="canonical" href="https://bonahouses.ru/" />
+
+        <meta
+            name="keywords"
+            content="ортопедическая клиника, ортопедия Санкт-Петербург, лечение суставов, лечение позвоночника, ортопед Склиника ортопедии, диагностика опорно-двигательного аппарата, ортопедические услуги, ортопедическая помоконсультация ортопеда, врачи ортопеды, боли в спине, боли в суставах, травматолог ортопед, плоскостопие леченартроз лечение, остеохондроз, восстановление после травм, ортопедическая клиника СПб"
+        />
+        <meta
+            name="description"
+            content="Ортопедическая клиника в Санкт-Петербурге. Комплексная диагностика и лечение заболеваний суставпозвоночника и опорно-двигательной системы. Команда опытных врачей-ортопедов, современное оборудованиндивидуальный подход и полный спектр ортопедических услуг для взрослых и детей."
+        />
+
+
+        <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,21 +65,19 @@
         <link rel="stylesheet" href="/src/styles/doctors.css" />
         <link rel="stylesheet" href="/src/styles/footer.css" />
         <link rel="stylesheet" href="/src/styles/hero-mobile.css" />
-
-        <title>Vite + TS</title>
     </head>
     <body>
         <header class="header">
             <div class="container header__content">
                 <a href="#" class="logo_pc">
-                    <img src="/logo.svg" alt="logo" />
+                    <img src="/logo.svg" alt="logo" class="logo_1"/>
                 </a>
 
                 <nav class="header__navigation">
-                    <a>О клинике</a>
-                    <a>Услуги</a>
-                    <a>Правила</a>
-                    <a>Врачи</a>
+                    <a href="#hero">О клинике</a>
+                    <a href="#services">Услуги</a>
+                    <a href="#rules">Правила</a>
+                    <a href="#doctors">Врачи</a>
                 </nav>
 
                 <div class="header__appointment">
@@ -44,17 +87,17 @@
                         </a>
                         <p>Пн-Пт / 10:00 - 21:00</p>
                     </div>
-                    <button class="header__appointment-button">
+                    <a class="header__appointment-button primaryButton" href="https://taplink.cc/doc.tsoy" target="_blank">
                         Записаться на прием
-                    </button>
+                    </a>
                 </div>
 
                 <div class="header__appointment-mobile">
                     <div class="header__appointment-socials">
-                        <a href="#" class="appointment__socials-link"
+                        <a href="#" class="appointment__socials-link socials-link"
                             ><img src="/telegram.svg" alt="telegram"
                         /></a>
-                        <a href="#" class="appointment__socials-link"
+                        <a href="#" class="appointment__socials-link socials-link"
                             ><img src="/instagram.svg" alt="instagram"
                         /></a>
                     </div>
@@ -85,7 +128,7 @@
 
 
         <main>
-            <section class="hero">
+            <section class="hero" id="hero">
                 <div class="container hero__content">
                     <div class="hero__intro">
                         <div class="hero__intro-mobile">
@@ -121,10 +164,10 @@
                         </div>
 
                         <div class="hero__socials">
-                            <a href="#" class="hero__socials-link"
+                            <a href="#" class="hero__socials-link primaryButton socials-link"
                                 ><img src="/telegram.svg" alt="telegram"
                             /></a>
-                            <a href="#" class="hero__socials-link"
+                            <a href="#" class="hero__socials-link socials-link "
                                 ><img src="/instagram.svg" alt="instagram"
                             /></a>
                         </div>
@@ -160,7 +203,7 @@
                     </div>
 
                     <div class="heroM__link-container">
-                        <a class="heroM__link">Записаться на приём</a>
+                        <a class="heroM__link" target="_blank" href="https://taplink.cc/doc.tsoy">Записаться на приём</a>
                     </div>
                 </div>
 
@@ -527,12 +570,12 @@
                 </div>
             </section>
 
-            <section class="services">
+            <section class="services" id="services">
                 <div class="container services__content">
                     <h2>Ортопедические услуги</h2>
                     <div class="services__list">
                         <div class="services__list-item">
-                            <img src="/services-bg.png" />
+                            <img src="/service-1.png" />
                             <div class="services__item-info">
                                 <div class="services__item-text">
                                     <h3>
@@ -547,7 +590,7 @@
                                     </p>
                                 </div>
                                 <a
-                                    class="services__item-link"
+                                    class="services__item-link primaryButton"
                                     href="https://taplink.cc/doc.tsoy"
                                     target="_blank"
                                     >Записаться на приём</a
@@ -556,7 +599,7 @@
                         </div>
 
                         <div class="services__list-item">
-                            <img src="/services-bg.png" />
+                            <img src="/service-2.png" />
                             <div class="services__item-info">
                                 <div class="services__item-text">
                                     <h3>
@@ -572,7 +615,7 @@
                                     </p>
                                 </div>
                                 <a
-                                    class="services__item-link"
+                                    class="services__item-link primaryButton"
                                     href="https://taplink.cc/doc.tsoy"
                                     target="_blank"
                                     >Записаться на приём</a
@@ -581,7 +624,7 @@
                         </div>
 
                         <div class="services__list-item">
-                            <img src="/services-bg.png" />
+                            <img src="/service-3.png" />
                             <div class="services__item-info">
                                 <div class="services__item-text">
                                     <h3>
@@ -596,7 +639,7 @@
                                     </p>
                                 </div>
                                 <a
-                                    class="services__item-link"
+                                    class="services__item-link primaryButton"
                                     href="https://taplink.cc/doc.tsoy"
                                     target="_blank"
                                     >Записаться на приём</a
@@ -605,7 +648,7 @@
                         </div>
 
                         <div class="services__list-item">
-                            <img src="/services-bg.png" />
+                            <img src="/service-4.png" />
                             <div class="services__item-info">
                                 <div class="services__item-text">
                                     <h3>
@@ -622,7 +665,7 @@
                                     </p>
                                 </div>
                                 <a
-                                    class="services__item-link"
+                                    class="services__item-link primaryButton"
                                     href="https://taplink.cc/doc.tsoy"
                                     target="_blank"
                                     >Записаться на приём</a
@@ -631,7 +674,7 @@
                         </div>
 
                         <div class="services__list-item">
-                            <img src="/services-bg.png" />
+                            <img src="/service-5.png" />
                             <div class="services__item-info">
                                 <div class="services__item-text">
                                     <h3>
@@ -646,7 +689,7 @@
                                     </p>
                                 </div>
                                 <a
-                                    class="services__item-link"
+                                    class="services__item-link primaryButton"
                                     href="https://taplink.cc/doc.tsoy"
                                     target="_blank"
                                     >Записаться на приём</a
@@ -657,7 +700,7 @@
                 </div>
             </section>
 
-            <section class="rules">
+            <section class="rules" id="rules">
                 <div class="container rules__content">
                     <h2>Правила ухода за стельками</h2>
                     <div class="rules__list">
@@ -787,7 +830,7 @@
                 </div>
             </section>
 
-            <section class="doctors">
+            <section class="doctors" id="doctors">
                 <div class="container doctors__content">
                     <h2>Специалисты клиники</h2>
                     <div
@@ -798,52 +841,42 @@
                     >
                         <div class="swiper__container">
                             <div class="doctor__card swiper__slide">
-                                <img src="/doctor.png"/>
+                                <img src="/doctor-3.jpg"/>
                                 <div class="doctor__card-content">
                                 <div class="doctor__card-info">
-                                    <h4>Сидоров Николай Андреевич</h4>
-                                    <p>ортопед-травматолог</p>
+                                    <h4>Цой Павел Викторович</h4>
+                                    <p>врач-ортопед</p>
                                 </div>
-                                <a class="doctor__card-link" href="#">
+                                <a class="doctor__card-link" href="https://taplink.cc/doc.tsoy"
+                                target="_blank">
                                     Записаться к врачу
                                 </a>
                                 </div>
                             </div>
 
                             <div class="doctor__card  swiper__slide">
-                                <img src="/doctor.png"/>
+                                <img src="/doctor-2.jpg"/>
                                 <div class="doctor__card-content">
                                 <div class="doctor__card-info">
-                                    <h4>Сидоров Николай Андреевич</h4>
-                                    <p>ортопед-травматолог</p>
+                                    <h4>Линник Владислав Романович</h4>
+                                    <p>ортезист</p>
                                 </div>
-                                <a class="doctor__card-link">
+                                <a class="doctor__card-link" href="https://taplink.cc/doc.tsoy"
+                                target="_blank">
                                     Записаться к врачу
                                 </a>
                                 </div>
                             </div>
 
                             <div class="doctor__card  swiper__slide">
-                                <img src="/doctor.png"/>
+                                <img src="/doctor-1.jpg"/>
                                 <div class="doctor__card-content">
                                 <div class="doctor__card-info">
-                                    <h4>Сидоров Николай Андреевич</h4>
-                                    <p>ортопед-травматолог</p>
+                                    <h4>Кострикин Сергей Иванович</h4>
+                                    <p>ортезист</p>
                                 </div>
-                                <a class="doctor__card-link">
-                                    Записаться к врачу
-                                </a>
-                                </div>
-                            </div>
-
-                            <div class="doctor__card  swiper__slide">
-                                <img src="/doctor.png"/>
-                                <div class="doctor__card-content">
-                                <div class="doctor__card-info">
-                                    <h4>Сидоров Николай Андреевич</h4>
-                                    <p>ортопед-травматолог</p>
-                                </div>
-                                <a class="doctor__card-link">
+                                <a class="doctor__card-link" href="https://taplink.cc/doc.tsoy"
+                                target="_blank">
                                     Записаться к врачу
                                 </a>
                                 </div>
@@ -876,23 +909,25 @@
 
                 <div class="footer__item">
                     <div class="footer__item-linkSocial">
-                        <a class="footer__item-link">Лицензия клиники</a>
+
                         <div class="footer__socials">
-                            <a href="#" class="footer__socials-link"
+                            <a href="#" class="footer__socials-link socials-link primaryButton"
                                 ><img src="/telegram.svg" alt="telegram"
                             /></a>
-                            <a href="#" class="footer__socials-link"
+                            <a href="#" class="footer__socials-link socials-link"
                                 ><img src="/instagram.svg" alt="instagram"
                             /></a>
                         </div>
                     </div>
-                    <a class="footer__item-link">Записаться на приём</a>
+                    <a class="footer__item-link" href="https://taplink.cc/doc.tsoy"
+                    target="_blank">Записаться на приём</a>
                 </div>
 
                 <div class="footer__socials-mobile">
                     <div class="socials__mobile-links">
-                        <a class="footer__item-link">Лицензия клиники</a>
-                        <a class="footer__item-link">Записаться на приём</a>
+
+                        <a class="footer__item-link" href="https://taplink.cc/doc.tsoy"
+                        target="_blank">Записаться на приём</a>
                     </div>
 
                     <div class="footer__item-linkSocial">
@@ -911,7 +946,7 @@
                 <hr/>
 
                 <div class="footer__item">
-                    <div class="footer__item-license"><span>© 2025 «Кабинет Ортопеда»</span> ИП Ельцин Р. Р.<br/> ОГРНИП 322228222213322 ИНН 127621591157<br/> Лицензия № Л000-11111-22/33333333 от 01.01.2020</div>
+                    <div class="footer__item-license"><span>© 2025 «Кабинет Ортопеда»</span> ИП Ельцин Р. Р.<br/> ОГРНИП 324784700422011 ИНН 262674692066<br/> Лицензия № Л000-11111-22/33333333 от 01.01.2020</div>
                     <p class="footer__item-meta">*Meta Platforms Inc. признана<br/> экстремистской организацией<br/> на территории РФ</p>
                 </div>
 

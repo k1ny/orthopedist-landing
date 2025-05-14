@@ -26,6 +26,14 @@
     color: var(--color-gray);
 }
 
+.header__navigation a {
+    text-decoration: none;
+    color: var(--color-gray);
+}
+.header__navigation a:hover {
+    color: var(--color-medium-white);
+}
+
 .header__appointment {
     display: flex;
     gap: 1.875rem;
@@ -49,11 +57,7 @@
 }
 
 .header__appointment-button {
-    background-color: var(--color-blue);
-    color: var(--color-white);
-    padding: 1.375rem 2.625rem;
-    border-radius: 1rem;
-    border: none;
+    padding: 1.3rem 2.6rem;
     font-weight: 700;
 }
 

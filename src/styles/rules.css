@@ -10,7 +10,7 @@
     gap: 5rem;
 }
 .rules__topicCard {
-    background-image: url("/rules__topic-card-bg.png");
+    background-image: url("/rules.png");
     background-size: cover;
     display: flex;
     gap: 1.75rem;
