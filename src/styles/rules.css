@@ -12,6 +12,7 @@
 .rules__topicCard {
     background-image: url("/rules.png");
     background-size: cover;
+    background-position: center;
     display: flex;
     gap: 1.75rem;
     padding: 3.625rem 2.75rem;
