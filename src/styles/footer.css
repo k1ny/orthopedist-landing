@@ -72,8 +72,8 @@
     color: var(--color-cold-white);
 }
 
-.footer__item-link:hover{
-    background-color: #1D2634
+.footer__item-link:hover {
+    background-color: #1d2634;
 }
 
 .footer__item-license {
@@ -213,3 +213,4 @@
         text-align: right;
         font-size: 0.75rem;
     }
+}
