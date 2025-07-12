@@ -7,6 +7,11 @@
     border-radius: 0 0 6.25rem 6.25rem;
 }
 
+.hero__description-gray {
+    color: var(--color-medium-white);
+    font-weight: 400;
+}
+
 .header__info-mobile {
     display: none;
 }
@@ -37,6 +42,7 @@
     font-weight: 600;
     font-size: 1.5rem;
     line-height: 1.5;
+    max-width: 870px;
 }
 
 .hero__info {

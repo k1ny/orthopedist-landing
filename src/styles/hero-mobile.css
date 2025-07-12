@@ -18,7 +18,7 @@
         background-color: var(--color-gray-hero);
     }
     .heroM__intro {
-        background-image: url("/hero-bg.png");
+        background-image: url("/hero_m-bg.png");
         background-size: 100% 100%;
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
@@ -46,14 +46,17 @@
         font-size: 1.625rem;
     }
     .heroM__description {
-        display: flex;
-        padding-inline: 2.375rem;
-        padding-block: 1.25rem;
-        align-items: start;
+        font-weight: 600;
+        max-width: 259px;
         gap: 0.5rem;
-        background-color: var(--color-gray-hero);
         color: var(--color-cold-white);
         border-radius: 2rem;
+    }
+    .heroM__description-container {
+        padding-block: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .heroM__description img {
         padding-top: 0.4rem;

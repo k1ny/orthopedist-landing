@@ -16,6 +16,7 @@
 .advantages__card {
     width: 37.5rem;
     border-radius: 1rem;
+    background-size: cover;
 }
 .default__card {
     padding-left: 3.625rem;
