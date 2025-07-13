@@ -4,30 +4,50 @@ import { Screen } from "./common/screen";
 import { Swiper } from "./common/swiper";
 import { Touch } from "./common/touch";
 
-document.querySelectorAll(".rules__list-item").forEach((el) => {
+document.querySelectorAll(".accordion-item").forEach((el) => {
   el.addEventListener("click", () => {
     const content = el.querySelector(".accordion__description") as HTMLElement;
     const plusIcon = el.querySelector(".acordion__button") as HTMLElement;
-    const isOpen = content.style.maxHeight;
+    const button = el.querySelector(".accordion-button") as HTMLElement;
+    const isOpen = content.classList.contains("open");
 
     document
       .querySelectorAll(".accordion__description")
       .forEach((contentEl) => {
-        (contentEl as HTMLElement).style.maxHeight = "";
-        (contentEl as HTMLElement).style.paddingBlock = "";
+        const el = contentEl as HTMLElement;
+        el.style.maxHeight = "0px";
+        el.style.paddingBlock = "0px";
+        el.classList.remove("open");
       });
 
     document.querySelectorAll(".acordion__button").forEach((icon) => {
       icon.classList.remove("rotated");
     });
 
+    document.querySelectorAll(".accordion-button").forEach((btn) => {
+      (btn as HTMLElement).classList.remove("visible");
+    });
+
     if (!isOpen) {
-      content.style.maxHeight = content.style.maxHeight + "500px";
-      if (window.innerWidth <= 1224) {
-        content.style.paddingBlock = "1.5rem";
-      } else content.style.paddingBlock = "3.125rem";
+      content.classList.add("open");
+
+      content.style.paddingBlock =
+        window.innerWidth <= 1224 ? "1.5rem" : "3.125rem";
+
+      requestAnimationFrame(() => {
+        const fullHeight = content.scrollHeight;
+        content.style.maxHeight = fullHeight * 2 + "px";
+      });
+
       plusIcon.classList.add("rotated");
+      button.classList.add("visible");
     }
+  });
+});
+
+document.querySelectorAll(".accordion-button").forEach((btn) => {
+  btn.addEventListener("click", (event) => {
+    event.stopPropagation();
   });
 });
 

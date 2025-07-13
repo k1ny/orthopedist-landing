@@ -17,10 +17,11 @@
     flex-direction: column;
     gap: 3.5rem;
 }
-.problems__category h3 {
-    color: var(--color-emerald);
+
+.problems__title {
     font-size: 2.25rem;
     font-weight: 600;
+    color: var(--color-emerald);
 }
 
 .problems__list {
