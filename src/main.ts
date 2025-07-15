@@ -6,10 +6,15 @@ import { Touch } from "./common/touch";
 
 document.querySelectorAll(".accordion-item").forEach((el) => {
   el.addEventListener("click", () => {
-    const content = el.querySelector(".accordion__description") as HTMLElement;
+    const accordion = el.querySelector(
+      ".accordion__description",
+    ) as HTMLElement;
     const plusIcon = el.querySelector(".acordion__button") as HTMLElement;
-    const button = el.querySelector(".accordion-button") as HTMLElement;
-    const isOpen = content.classList.contains("open");
+    const button = el.querySelector(".accordion_link-button") as HTMLElement;
+    const isOpen = accordion.classList.contains("open");
+    const content = el.querySelector(
+      ".accordion__description-container",
+    ) as HTMLElement;
 
     document
       .querySelectorAll(".accordion__description")
@@ -24,19 +29,19 @@ document.querySelectorAll(".accordion-item").forEach((el) => {
       icon.classList.remove("rotated");
     });
 
-    document.querySelectorAll(".accordion-button").forEach((btn) => {
+    document.querySelectorAll(".accordion_link-button").forEach((btn) => {
       (btn as HTMLElement).classList.remove("visible");
     });
 
     if (!isOpen) {
-      content.classList.add("open");
+      accordion.classList.add("open");
 
       content.style.paddingBlock =
         window.innerWidth <= 1224 ? "1.5rem" : "3.125rem";
 
       requestAnimationFrame(() => {
-        const fullHeight = content.scrollHeight;
-        content.style.maxHeight = fullHeight * 2 + "px";
+        const fullHeight = accordion.scrollHeight;
+        accordion.style.maxHeight = fullHeight * 2 + 100 + "px";
       });
 
       plusIcon.classList.add("rotated");
@@ -45,7 +50,7 @@ document.querySelectorAll(".accordion-item").forEach((el) => {
   });
 });
 
-document.querySelectorAll(".accordion-button").forEach((btn) => {
+document.querySelectorAll(".accordion_link-button").forEach((btn) => {
   btn.addEventListener("click", (event) => {
     event.stopPropagation();
   });
