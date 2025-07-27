@@ -55,7 +55,7 @@
     .heroM__description-container {
         padding-block: 20px;
         display: flex;
-        justify-content: center;
+        padding-inline: 2.25rem;
         align-items: center;
     }
     .heroM__description img {
