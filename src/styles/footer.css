@@ -45,6 +45,12 @@
     font-size: 3rem;
 }
 
+.footer__meta-pc{
+    color: var(--color-light-gray);
+    max-width: 430px;
+    font-style: italic;
+}
+
 .footer__item-worktime,
 .footer__item-address {
     font-size: 1.5rem;
@@ -173,14 +179,15 @@
         display: none;
     }
     .footer__item:nth-child(8) {
-        text-align: center;
+        text-align: left;
         display: flex;
-        justify-content: center;
     }
     .footer__item-link {
         font-size: 0.75rem;
         padding: 1.125rem 1.375rem;
+        width: 100%;
     }
+
     .footer__socials-link {
         padding: 0.875rem;
     }
@@ -198,7 +205,6 @@
     }
     .footer__item-offer {
         max-width: 13.125rem;
-        width: 100%;
         color: var(--color-light-gray);
         font-style: italic;
         font-size: 0.5rem;
