@@ -116,3 +116,36 @@ const createBurger = () => {
 };
 
 createBurger();
+
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll<HTMLAnchorElement>('.modal__trigger');
+
+  buttons.forEach((button) => {
+    button.addEventListener('click', (event) => {
+      event.preventDefault();
+
+      const modalId = button.dataset.modal;
+      if (!modalId) return;
+
+      const modal = document.getElementById(modalId);
+      if (!modal) return;
+
+      modal.classList.add('active');
+    });
+  });
+
+  const modals = document.querySelectorAll<HTMLElement>('.modal');
+
+  modals.forEach((modal) => {
+    modal.addEventListener('click', (event) => {
+      const target = event.target as HTMLElement;
+
+      if (
+        target.classList.contains('modal__overlay') ||
+        target.classList.contains('modal__close')
+      ) {
+        modal.classList.remove('active');
+      }
+    });
+  });
+});
