@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (
         target.classList.contains('modal__overlay') ||
-        target.classList.contains('modal__close')
+        target.closest('.modal__close')
       ) {
         modal.classList.remove('active');
       }

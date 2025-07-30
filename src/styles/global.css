@@ -104,6 +104,18 @@ a[href^="tel"] {
     align-items: center;
 }
 
-.emerald-text{
-    color: var(--color-emerald)
+.aboutDescHref{
+    display: block;
+    background-color: black;
+}
+.aboutMobHref{
+    display: none;
+}
+@media screen and (max-width: 1224px) {
+    .aboutDescHref{
+        display: none;
+    }
+    .aboutMobHref{
+        display: block;
+    }
 }
